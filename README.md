@@ -1,7 +1,16 @@
-# Next.js + Contentlayer
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+# Blog for Josh Mayer
 
-https://next-contentlayer.vercel.app
+Next.js 13 App Router
+
+Markdown with MDX
+
+Tailwindcss
 
 
+
+
+
+
+
+Credit: @shadcn
