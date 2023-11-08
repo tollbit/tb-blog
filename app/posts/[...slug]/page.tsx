@@ -50,10 +50,10 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="pt-4 prose dark:prose-invert ">
+    <article className="pt-4 mb-16 prose dark:prose-invert ">
       <div className="flex justify-between items-center">
         <span>
-          <h3 className="mb-2">{post.title}</h3>
+          <h2 className="mb-2">{post.title}</h2>
           {post.description && (
             <p className="text-md my-1 text-slate-700 dark:text-slate-200">
               {post.description}

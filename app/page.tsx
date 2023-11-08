@@ -9,10 +9,13 @@ export default function Home() {
       </h3> */}
       {allPosts.map((post) => (
         <article key={post._id}>
-          <Link href={post.slug}>
-            <h2>{post.title}</h2>
+          <Link className="flex items-end space-x-4" href={post.slug}>
+            <h2 className="mb-0">{post.title}</h2>
           </Link>
-          {post.description && <p>{post.description}</p>}
+          {post.description && <p className="mt-2 mb-1">{post.description}</p>}
+          {post.date && (
+            <p className="my-0 no-underline">{post.date.substring(0, 10)}</p>
+          )}
         </article>
       ))}
     </div>
