@@ -5,7 +5,7 @@ Next.js 13 App Router
 
 Markdown with MDX
 
-Tailwindcss
+**Tailwindcss**∫
 
 
 
@@ -13,4 +13,4 @@ Tailwindcss
 
 
 
-Credit: @shadcn
+Credit: @**shadcn**
