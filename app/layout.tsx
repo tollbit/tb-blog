@@ -22,7 +22,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header className="">
-            <div className="fixed top-0 flex justify-between w-full px-10 pt-8 font-bold tracking-tighter">
+            <div className="fixed top-0 flex justify-between w-full dark:mix-blend-difference px-4 sm:px-10 pt-8 font-bold tracking-tighter">
               <nav className="text-md space-x-6 underline">
                 <Link href="/">Home</Link>
                 {/* <Link href="/about">About</Link> */}
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Analytics />
 
           <footer>
-            <div className="fixed bottom-0 w-full px-10 pb-8 font-bold tracking-tighter">
+            <div className="fixed bottom-0 w-full px-4 sm:px-10 pb-8 dark:mix-blend-difference font-bold tracking-tighter">
               <nav className="text-sm flex justify-between space-x-6">
                 <div className="">
                   <h3 className="">Josh Mayer, 2023.</h3>
