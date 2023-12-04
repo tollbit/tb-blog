@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
 import { ModeToggle } from "@/components/mode-toggle";
 import { NextResponse } from "next/server";
+import Script from "next/script";
 
 export const metadata = {
   title: "Some Thoughts From Josh Mayer",
@@ -18,6 +19,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <Script src="https://tb-monitor.vercel.app/api/v1/1234-unique-id" />
+
       <body
         className={`antialiased min-h-screen bg-white dark:bg-black text-slate-900 dark:text-slate-50 font-serif tracking-tighter`}
       >
