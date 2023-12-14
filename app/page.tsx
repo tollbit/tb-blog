@@ -3,12 +3,17 @@ import Link from "next/link";
 import { NextResponse } from "next/server";
 
 export default function Home() {
+  const allPostsSorted = allPosts.sort((a, b) => {
+    const dateA = new Date(b.date).getTime();
+    const dateB = new Date(a.date).getTime();
+    return dateA - dateB;
+  });
   return (
     <div className="prose dark:prose-invert">
       {/* <h3 className="mt-16">
         Hello, my name is Josh and here are some of my thoughts.
       </h3> */}
-      {allPosts.reverse().map((post) => (
+      {allPostsSorted.map((post) => (
         <article key={post._id}>
           <Link className="flex items-end space-x-4" href={post.slug}>
             <h2 className="mb-0">{post.title}</h2>
