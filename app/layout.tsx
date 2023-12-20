@@ -29,12 +29,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="fixed top-0 flex justify-between w-full dark:mix-blend-difference px-4 sm:px-10 pt-8 font-bold tracking-tighter">
               <nav className="text-md space-x-6 underline">
                 <Link href="/">Home</Link>
+                <Link href="/posts">Notes</Link>
                 {/* <Link href="/about">About</Link> */}
               </nav>
               <ModeToggle />
             </div>
           </header>
-          <div className="max-w-2xl mx-auto py-10 px-4">
+          <div className="max-w-2xl mx-auto py-16 px-4">
             <main>{children}</main>
           </div>
           <Analytics />
