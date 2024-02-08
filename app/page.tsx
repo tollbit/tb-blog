@@ -3,16 +3,29 @@ import Link from "next/link";
 import { NextResponse } from "next/server";
 
 export default function Home() {
+  const allPostsSorted = allPosts.sort((a, b) => {
+    const dateA = new Date(b.date).getTime();
+    const dateB = new Date(a.date).getTime();
+    return dateA - dateB;
+  });
   return (
-    <div className="max-w-3xl prose dark:prose-invert mt-16">
-      <div className="">
-        <h3 className="">Hello, my name is Josh Mayer.</h3>
-        <p>
-          I am a textbook internet native/addict, which has led me to try
-          building my own parts of it. Sometimes for school, myself, youtube, or
-          real projects.
-        </p>
-      </div>
+    <div className="prose dark:prose-invert mt-12">
+      {allPostsSorted.map((post) => (
+        <article key={post._id}>
+          <Link className="my-0 flex items-end" href={post.slug}>
+            <h3 className="font-extrabold no-underline">{post.title}</h3>
+          </Link>
+
+          {post.description && (
+            <p className="my-0 font-medium">{post.description}</p>
+          )}
+          {post.date && (
+            <p className="my-0 no-underline font-mono text-xs">
+              {post.date.substring(0, 10)}
+            </p>
+          )}
+        </article>
+      ))}
     </div>
   );
 }

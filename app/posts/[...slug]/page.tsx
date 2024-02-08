@@ -50,23 +50,18 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="pt-4 mb-16 prose dark:prose-invert ">
-      <div className="flex justify-between items-center">
-        <span>
-          <h2 className="mb-2">{post.title}</h2>
-          {post.description && (
-            <p className="text-md my-1 text-slate-700 dark:text-slate-200">
-              {post.description}
-            </p>
-          )}
-        </span>
+    <article className="pt-12 mb-16 prose dark:prose-invert ">
+      <div className="flex flex-col">
+        <h3 className="font-extrabold">{post.title}</h3>
+        {post.description && (
+          <p className="my-0 font-medium">{post.description}</p>
+        )}
         {post.date && (
-          <p className="text-md my-0 text-slate-700 dark:text-slate-200">
+          <p className="my-0 no-underline font-mono text-xs">
             {post.date.substring(0, 10)}
           </p>
         )}
       </div>
-
       <hr className="" />
       <Mdx code={post.body.code} />
     </article>
