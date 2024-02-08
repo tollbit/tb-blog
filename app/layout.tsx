@@ -9,8 +9,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Some Thoughts From Josh Mayer",
-  description: "just a simple repository of notes and others from Josh Mayer",
+  title: "Some Thoughts From The Tollbit Team",
+  description: "just a simple repository of notes and others",
 };
 
 interface RootLayoutProps {
