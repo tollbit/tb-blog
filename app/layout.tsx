@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
   title: "Some Thoughts From The Tollbit Team",
@@ -16,6 +17,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-K6QG2D80BD" />
+
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`antialiased min-h-screen bg-white font-medium text-slate-900 `}

@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
