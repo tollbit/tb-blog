@@ -4,10 +4,32 @@ import { Analytics } from "@/components/analytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Some Thoughts From The Tollbit Team",
-  description: "just a simple repository of notes and others",
+export const metadata: Metadata = {
+  title: "Thoughts From The Tollbit Team",
+  description: "What we're building at Tollbit and why",
+  openGraph: {
+    title: "Thoughts From The Tollbit Team",
+    description: "What we're building at Tollbit and why.",
+    url: "https://why.tollbit.com",
+    siteName: "Why Tollbit",
+    images: [
+      {
+        url: "https://why.tollbit.com/ogimage.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thoughts From The Tollbit Team",
+    description: "What we're building at Tollbit and why.",
+    images: ["https://why.tollbit.com/ogimage.png"],
+  },
 };
 
 interface RootLayoutProps {
