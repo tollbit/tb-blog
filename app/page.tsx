@@ -15,12 +15,12 @@ export default function Home() {
     <div className="prose dark:prose-invert">
       {allPostsSorted.map((post) => (
         <article key={post._id}>
-          <Link className="my-0 flex items-end" href={post.slug}>
-            <h3 className="font-extrabold no-underline">{post.title}</h3>
+          <Link className="my-0 mb-2 flex items-end" href={post.slug}>
+            <h3 className="mb-0 font-extrabold no-underline">{post.title}</h3>
           </Link>
 
           {post.description && (
-            <p className="my-0 font-medium">{post.description}</p>
+            <p className=" my-0 mb-2 font-medium">{post.description}</p>
           )}
           {post.date && (
             <p className="my-0 no-underline font-mono text-xs">
