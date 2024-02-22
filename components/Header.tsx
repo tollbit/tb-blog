@@ -9,7 +9,7 @@ export default function Header() {
           Home
         </Link>
         <Link href={"/"}>
-          <Image src={"/whytollbit.png"} alt={""} width={200} height={50} />
+          <Image src={"/hand.png"} alt={""} width={200} height={50} />
         </Link>
         <a href="mailto:team@tollbit.com" className="underline sm:mt-0 mt-3">
           Contact
