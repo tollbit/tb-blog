@@ -3,6 +3,7 @@ import Link from "next/link";
 import { NextResponse } from "next/server";
 import { SparklesCore } from "@/components/sparkles";
 import React from "react";
+import { formatDate } from "@/lib/utils";
 
 export default function Home() {
   const allPostsSorted = allPosts.sort((a, b) => {
@@ -23,7 +24,7 @@ export default function Home() {
           )}
           {post.date && (
             <p className="my-0 no-underline font-mono text-xs">
-              {post.date.substring(0, 10)}
+              {formatDate(post.date)}
             </p>
           )}
         </article>
