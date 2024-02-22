@@ -50,7 +50,7 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="pt-12 mb-16 prose dark:prose-invert ">
+    <article className=" mb-16 prose dark:prose-invert ">
       <div className="flex flex-col">
         <h3 className="font-extrabold">{post.title}</h3>
         {post.description && (
@@ -62,7 +62,7 @@ export default async function PostPage({ params }: PostProps) {
           </p>
         )}
       </div>
-      <hr className="" />
+      {/* <hr className="" /> */}
       <Mdx code={post.body.code} />
     </article>
   );

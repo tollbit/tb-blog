@@ -1,6 +1,10 @@
+"use client";
+
 import { allPosts } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { NextResponse } from "next/server";
+import { SparklesCore } from "@/components/sparkles";
+import React from "react";
 
 export default function Home() {
   const allPostsSorted = allPosts.sort((a, b) => {
@@ -9,7 +13,7 @@ export default function Home() {
     return dateA - dateB;
   });
   return (
-    <div className="prose dark:prose-invert mt-12">
+    <div className="prose dark:prose-invert">
       {allPostsSorted.map((post) => (
         <article key={post._id}>
           <Link className="my-0 flex items-end" href={post.slug}>
