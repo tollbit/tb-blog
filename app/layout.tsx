@@ -1,13 +1,8 @@
-import Link from "next/link";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
-import { ModeToggle } from "@/components/mode-toggle";
-import { NextResponse } from "next/server";
-import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { SparklesCore } from "@/components/sparkles";
 
 export const metadata = {
   title: "Some Thoughts From The Tollbit Team",
@@ -21,7 +16,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      {/* <Script src="https://tb-monitor.vercel.app/api/v1/1234-unique-id" /> */}
       <link rel="icon" href="/favicon.ico" sizes="any" />
 
       <body

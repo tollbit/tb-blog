@@ -1,5 +1,3 @@
-"use client";
-
 import { allPosts } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { NextResponse } from "next/server";

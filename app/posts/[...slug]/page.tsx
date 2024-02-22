@@ -50,9 +50,9 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className=" mb-16 prose dark:prose-invert ">
+    <article className=" mb-16 prose dark:prose-invert font-serif">
       <div className="flex flex-col">
-        <h3 className="font-extrabold">{post.title}</h3>
+        <h3 className="font-extrabold font-sans">{post.title}</h3>
         {post.description && (
           <p className="my-0 font-medium">{post.description}</p>
         )}
