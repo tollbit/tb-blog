@@ -28,7 +28,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`antialiased min-h-screen bg-white font-medium dark:bg-black text-slate-900 dark:text-slate-50 `}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <div className="">
+          {/* <div className="">
             <SparklesCore
               id="tsparticlesfullpage"
               background="transparent"
@@ -39,7 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               particleColor="#0000ff"
               speed={0.1}
             />
-          </div>
+          </div> */}
 
           <Header />
 
