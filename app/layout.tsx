@@ -17,9 +17,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-
       <body
-        className={`antialiased min-h-screen bg-white font-medium dark:bg-black text-slate-900 dark:text-slate-50 `}
+        className={`antialiased min-h-screen bg-white font-medium text-slate-900 `}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {/* <div className="">
