@@ -10,7 +10,7 @@ const imperial = Imperial_Script({ weight: ["400"], subsets: ["latin"] });
 export default function Header() {
   return (
     <header className="">
-      <nav className="fixed top-0 pt-8 flex justify-between w-full items-center dark:mix-blend-difference px-4 sm:px-10 font-bold">
+      <nav className="fixed top-0 pt-8 flex justify-between w-full items-center dark:mix-blend-difference px-4 sm:px-10 font-bold z-30">
         <div className="flex space-x-12">
           <a href="mailto:josh@tollb.it" className="underline">
             Contact

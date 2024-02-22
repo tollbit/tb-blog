@@ -42,7 +42,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           </div>
 
           <Header />
-          <div className="relative max-w-2xl mx-auto py-16 px-4 z-30">
+
+          <div className="relative max-w-2xl mx-auto py-16 px-4 z-10">
             <main>{children}</main>
           </div>
           <Analytics />
