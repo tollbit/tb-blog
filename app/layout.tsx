@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`antialiased min-h-screen bg-white font-medium dark:bg-black text-slate-900 dark:text-slate-50 `}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="">
             <SparklesCore
               id="tsparticlesfullpage"
