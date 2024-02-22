@@ -37,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
           <Header />
 
-          <div className="relative max-w-2xl mx-auto py-16 px-4 z-10">
+          <div className="relative max-w-2xl mx-auto mt-16 py-16 px-4 z-10">
             <main>{children}</main>
           </div>
           <Analytics />

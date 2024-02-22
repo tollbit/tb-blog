@@ -9,8 +9,8 @@ export default function Footer() {
             <h3 className="">Novoscribe, Inc. © 2024.</h3>
           </div>
           <div className="space-x-6 underline">
-            <Link href="https://tollbit.com">Tollbit.com</Link>
-            <Link href="https://x.com/tollbit_">X</Link>
+            <Link href="https://tollbit.com">tollbit.com</Link>
+            {/* <Link href="https://x.com/tollbit_">X</Link> */}
             {/* <Link href="https://github.com/">GitHub</Link> */}
             <Link href="https://www.linkedin.com/company/tollbit/">
               LinkedIn
