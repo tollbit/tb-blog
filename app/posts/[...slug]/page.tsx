@@ -53,9 +53,6 @@ export default async function PostPage({ params }: PostProps) {
     <article className=" mb-16 prose dark:prose-invert font-serif">
       <div className="flex flex-col">
         <h3 className="font-extrabold font-sans">{post.title}</h3>
-        {post.description && (
-          <p className="my-0 font-medium">{post.description}</p>
-        )}
         {post.date && (
           <p className="my-0 no-underline font-mono text-xs">
             {post.date.substring(0, 10)}

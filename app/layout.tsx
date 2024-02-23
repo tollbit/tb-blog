@@ -41,7 +41,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <GoogleAnalytics gaId="G-K6QG2D80BD" />
 
-      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body
         className={`antialiased min-h-screen bg-white font-medium text-slate-900 `}
       >
